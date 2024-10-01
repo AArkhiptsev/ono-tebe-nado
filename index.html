@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body>
+  
     <header class="header">
       <nav class="header__menu">
         <ul class="header__menu-list">
@@ -24,10 +25,9 @@
           </li>
         </ul>   
       </nav>
-      <a>
+      <a class="header__logo" >
         <img 
-        class="header__logo" 
-        src="./images/logo-black.svg" 
+         src="./images/logo-black.svg" 
         alt="Логотип проекта">
       </a> 
       <address class="address">
@@ -37,47 +37,41 @@
           наб. Принсенграхт 263-<br>265, Амстердам
         </p>
       </address>
-      <!-- <include src="address.html"></include> непонятно почему не работает. вынесем адрес в отдельный .html-->
     </header>
-    <main>
-     <section class="cover"> 
-        <h1 class="cover__title">
-          <span class="accent-span">
-            <span >ОН</span>
-            <span class="accent_span__last-char">О</span>
+    <main class="main">
+     <section class="cover overlay"> 
+      
+      <h1 class="cover__title">
+        <span class="aligned-text">
+          О<span class="letter-spacing-extended">НО
           </span>
-          <span class="accent-span">
-            <span class="text-center">ТЕБ</span>
-            <span class="accent_span__last-char">Е</span>
-          </span>
-          <span class="accent-span">
-            <span class="text-right">Н</span>
-            <span class="text-right_second">АДО</span>
-          </span>
-        </h1>
-        <p class="cover__manifest">
-          <span class="cover__manifest-word">Аукцион</span> 
-          <span class="cover__manifest-word">вещей,</span>
-          <span class="cover__manifest-word">в</span>
-          <span class="cover__manifest-word">которые</span>
-          <span class="cover__manifest-word">никто</span>
-          <span class="cover__manifest-word">не</span>
-          <span class="cover__manifest-word">верил</span>
-          <button class="bet-button">
-            Сделать ставку
-          </button>
-        </p>
+        </span>
+        <span class="aligned-text aligned-text_center">
+          ТЕ<span class="letter-spacing-extended">БЕ</span>
+        </span>
+        <span class="aligned-text aligned-text_right">
+          <span class="letter-spacing-extended">Н</span>АД<span class="no-letterspacing">О</span>
+        </span>
+       </h1>
+          
+       
+        <div class="cover__manifest">
+          <p class="cover__manifest-text">Аукцион вещей, в которые никто не верил</p>
+          <button class="bet-button">Сделать ставку</button>
+        </div> 
       </section>
-
       <section class="lots">
         <h2 class="lots_heading">Лоты</h2>
         <ul class="lots__card-list">
           <li class="lots__card-list-item card_type_film">
+
             <a class="card__link">
-              <article class="card">
-                <p class="card__title">Фильм режиссёра, который бросил киношколу</p>
+              <article class="card overlay">
+                
+                <h3 class="card__title">Фильм режиссёра, который бросил киношколу</h3>
+     
                 <p class="card__text">Не просто бросил, а ушёл с первой лекции. 
-                 Какой была бы ваша ставка, если бы вы не знали, что режиссёр &#8212 
+                 Какой была бы ваша ставка, если бы вы не знали, что режиссёр &#8212; 
                  Пол Томас Андерсон?
                 </p>
               </article>
@@ -85,8 +79,8 @@
           </li>
           <li class="lots__card-list-item card_type_book">
             <a class="card__link">
-              <article class="card">
-                <p class="card__title">Книга, где описан один скучный день из жизни рекламного агента</p>
+              <article class="card overlay">
+                <h3 class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
                 <p class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с 
                  переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года 
                  и об истории литературы, начиная с античных времён. И это всё накладывается на 
@@ -97,11 +91,11 @@
           </li>
           <li class="lots__card-list-item card_type_picture">
            <a class="card__link">
-              <article class="card">
-                <p class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</p>
+              <article class="card overlay">
+                <h3 class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
                 <p class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то 
-                 похожее на инфузорию-туфельку. Никаких полей, лесов, котиков&#8230 Сколько бы вы на 
-                 такое поставили, если бы не знали, что это &#8212 одна из революционных работ Кандинского?
+                 похожее на инфузорию-туфельку. Никаких полей, лесов, котиков&#8230; Сколько бы вы на 
+                 такое поставили, если бы не знали, что это &#8212; одна из революционных работ Кандинского?
                 </p>
               </article>
             </a>
@@ -111,7 +105,6 @@
           Посмотреть больше
         </a>
       </section>
-    
       <section class="about">
        <div class="about__logo"></div>
         <div>
@@ -135,11 +128,11 @@
      </section>
     </main>
     <footer class="footer">
-      <div class="address footer__address">
+      <nav class="address footer__address">
           <a href="tel:+9999555555">+9 999 555 5555</a><br>
           <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br>
           наб. Принсенграхт 263-<br>265, Амстердам
-      </div>
+      </nav>
       <div class="footer__menu">
         <ul class="footer__menu-list">
           <li class="header__menu-item header__menu-item_active">
@@ -153,10 +146,12 @@
           </li>
         </ul>
        </div>
-        <div class="footer__social-list">
+       <div class="footer__social-list">
+       <a class="footer__social-link" href="#0">
           <img class="footer__social-icon"
           src="./images/yt.svg"
           alt=""> 
+        </a>  
         <a class="footer__social-link" href="#0">
          <img class="footer__social-icon"
          src="./images/vk.svg"
@@ -168,6 +163,6 @@
          alt="ВК">
        </a>  
       </div>
-   </footer>
+    </footer>
   </body>
 </html>
