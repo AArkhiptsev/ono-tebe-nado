@@ -1,7 +1,7 @@
 .header {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
-  margin: 95px 26px 96px 24px;
+  margin: 71px 26px 96px 24px;
 }
 
 .header__menu {
@@ -57,7 +57,6 @@
   background-image: url("../images/cover.jpg");
   background-position: center;
   background-size: cover;
-  height: 757px;
   flex-direction: column;
   row-gap: 25px;
 }
@@ -65,6 +64,7 @@
 
 
 .cover__title {
+  position: relative;
   color: white;
   font-weight: 1000;
   font-size: 100px;
@@ -98,11 +98,12 @@
 
 .cover__manifest {
   display: flex;
-  padding: 136px 30px;
+  padding: 136px 30px 0;
   color: white;
 }
 
 .cover__manifest-text {
+  position: relative;
   text-transform: uppercase;
   padding-top: 10px;
   font-size: 23px;
@@ -112,6 +113,7 @@
 }
 
 .bet-button {
+  position: relative;
   font-family: Raleway, sans-serif;
   background-color: transparent;
   border: 1px solid currentColor;
@@ -138,13 +140,12 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  gap: 5px;
+  gap: 20px;
   list-style: none;
   margin: 26px 25px 30px 24px;
   flex-wrap: wrap;
-
-  height: 563px;
 }
+ 
 
 .lots__card-list-item {
   position: relative;
@@ -160,14 +161,15 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
-  padding-top: 20px;
+  min-height: 563px;
+  padding-top: 18px;
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 48px;
 }
 
 .card__title {
+  position: relative;
   text-transform: uppercase;
   font-weight: 700;
   padding-top: 33px;
@@ -181,6 +183,7 @@
 }
 
 .card__text {
+  position: relative;
   display: flex;
   justify-content: center;
   font-size: 20px;
@@ -294,5 +297,5 @@
   display: block;
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
 }
