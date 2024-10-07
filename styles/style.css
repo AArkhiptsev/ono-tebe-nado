@@ -1,7 +1,7 @@
 .header {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
-  margin: 71px 26px 96px 24px;
+  margin: 93px 26px 96px 24px;
 }
 
 .header__menu {
@@ -98,7 +98,7 @@
 
 .cover__manifest {
   display: flex;
-  padding: 136px 30px 0;
+  padding: 135px 30px 0;
   color: white;
 }
 
